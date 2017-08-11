@@ -6,9 +6,24 @@
 [![Platform](http://img.shields.io/badge/Platform-iOS-E9C2BD.svg?style=flat)](https://developer.apple.com)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-9EA59D.svg)](paypal.me/DingSongwen)
 ### 安装
+#### Carthage
+
 add code below to your Cartfile and command `carthage update`
+
 ```
 github "DingSoung/Model-Cache"
+```
+
+#### Cocoa Pod
+
+add pod file below and command `pod update`
+
+```
+platform :ios, ‘8.0’
+use_frameworks!
+target 'AppStore' do
+	pod	'ModelCache'
+end
 ```
 
 ### 缓存设计
