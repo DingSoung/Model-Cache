@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CED973621F335F94002CE9D1"
-               BuildableName = "ModelCache.framework"
-               BlueprintName = "ModelCache"
+               BlueprintIdentifier = "CE9AEA6E1F7120FE0010D22E"
+               BuildableName = "ModelCache_tvOS.framework"
+               BlueprintName = "ModelCache_tvOS"
                ReferencedContainer = "container:ModelCache.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CED973621F335F94002CE9D1"
-            BuildableName = "ModelCache.framework"
-            BlueprintName = "ModelCache"
+            BlueprintIdentifier = "CE9AEA6E1F7120FE0010D22E"
+            BuildableName = "ModelCache_tvOS.framework"
+            BlueprintName = "ModelCache_tvOS"
             ReferencedContainer = "container:ModelCache.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CED973621F335F94002CE9D1"
-            BuildableName = "ModelCache.framework"
-            BlueprintName = "ModelCache"
+            BlueprintIdentifier = "CE9AEA6E1F7120FE0010D22E"
+            BuildableName = "ModelCache_tvOS.framework"
+            BlueprintName = "ModelCache_tvOS"
             ReferencedContainer = "container:ModelCache.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

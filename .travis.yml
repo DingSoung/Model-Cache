@@ -1,8 +1,14 @@
 language: swift
 os: osx
-osx_image: xcode8.3
+osx_image: xcode9
 before_install:
 script:
   - xcodebuild clean -scheme ModelCache | xcpretty
-  - xcodebuild -project ModelCache.xcodeproj -scheme ModelCache -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' | xcpretty
-  
+  - xcodebuild clean -scheme ModelCache_macOS | xcpretty
+  - xcodebuild clean -scheme ModelCache_tvOS | xcpretty
+  - xcodebuild clean -scheme ModelCache_watchOS | xcpretty
+
+  - xcodebuild -project ModelCache.xcodeproj -scheme ModelCache -destination 'name=Generic iOS Device' | xcpretty
+  - xcodebuild -project ModelCache.xcodeproj -scheme ModelCache_macOS -destination 'arch=x86_64' | xcpretty
+  - xcodebuild -project ModelCache.xcodeproj -scheme ModelCache_tvOS -destination 'name=name=Generic tvOS Device' | xcpretty
+  - xcodebuild -project ModelCache.xcodeproj -scheme ModelCache_watchOS -destination 'name=name=Generic watchOS Device' | xcpretty

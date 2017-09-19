@@ -3,8 +3,8 @@
 
 import Foundation
 
+@objc
 extension NSObject {
-    
     // MARK: set and get
     /// example key: "10209383" path: "/cities/street"
     @discardableResult public final func setCache(forKey key: String, atPath path: String) -> Error? {
