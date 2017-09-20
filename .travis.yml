@@ -1,6 +1,6 @@
 language: swift
 os: osx
-osx_image: xcode9
+osx_image: xcode9.0
 before_install:
 script:
   - xcodebuild clean -scheme ModelCache | xcpretty
