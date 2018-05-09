@@ -1,11 +1,11 @@
-![Release](https://img.shields.io/github/release/DingSoung/Model-Cache.svg)
+![Release](https://img.shields.io/github/release/DingSoung/Cache.svg)
 ![Status](https://travis-ci.org/DingSoung/Model-Cache.svg?branch=master)
 
-![CocoaPods](https://img.shields.io/cocoapods/v/ModelCache.svg)
+![CocoaPods](https://img.shields.io/cocoapods/v/Cache.svg)
 ![Carthage](https://img.shields.io/badge/Carthage-compatible-yellow.svg?style=flat)
 ![SwiftPackage](https://img.shields.io/badge/SwiftPackage-compatible-E66848.svg?style=flat)
 
-![Language](https://img.shields.io/badge/Swift-4-FFAC45.svg?style=flat)
+![Language](https://img.shields.io/badge/Swift-4.1-FFAC45.svg?style=flat)
 ![Platform](http://img.shields.io/badge/Platform-iOS|tvOS|macOS|watchOS-E9C2BD.svg?style=flat)
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-9EA59D.svg)](https://paypal.me/DingSongwen)
@@ -16,19 +16,7 @@
 add code below to your Cartfile and command `carthage update`
 
 ```shell
-github "DingSoung/Model-Cache"
-```
-
-#### Cocoa Pod
-
-add pod file below and command `pod update`
-
-```
-platform :ios, ‘8.0’
-use_frameworks!
-target 'AppStore' do
-	pod	'ModelCache'
-end
+github "DingSoung/Cache"
 ```
 
 #### Swift Package Manager
@@ -40,7 +28,7 @@ import PackageDescription
 let package = Package(
     name: "SPMExample",
     dependencies: [
-        .Package(url: "https://github.com/DingSoung/Model-Cache.git", Version(0,2,0)),
+        .Package(url: "https://github.com/DingSoung/Cache.git", Version(0,4,0)),
     ]
 )
 ```
