@@ -22,8 +22,8 @@ import Foundation
         cache.evictsObjectsWithDiscardedContent = true
         return cache
     }()
+    /*
     private var lru = Set<String>()
-    
     func setCache(for key: String, at path: String?) -> Error? {
         if lru.count >= size {
             if let oldKey = lru.first {
@@ -35,17 +35,12 @@ import Foundation
             }
         }
     }
+ */
 }
 
 extension Cache {
     /// example key: "10209383" path: "/cities/street"
     @discardableResult public class final func setCache(for key: String, at path: String) -> Error? {
-        
-        
-        
-        
-        
-        
         do {
             try FileManager.default.createDirectory(atPath: Cache.shared.dir + path, withIntermediateDirectories: true, attributes: nil)
         } catch let error {
@@ -70,7 +65,7 @@ extension Cache {
             return object
         }
         do {
-            let data = try Data.init(contentsOf: URL(fileURLWithPath: Cache.shared.dir + keyPath), options: .mappedRead)
+            let data = try Data(contentsOf: URL(fileURLWithPath: Cache.shared.dir + keyPath), options: .mappedRead)
             guard let object = NSKeyedUnarchiver.unarchiveObject(with: data as Data) else {
                 fail?(NSError(domain: "unarchibe object fail", code: -1, userInfo: ["keyPath": keyPath,"data": data]) as Error)
                 return nil
